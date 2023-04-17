@@ -1,0 +1,114 @@
+header {
+    height: 60px;
+    width: 99vw;
+    background-color:#2F3C7E;  
+    color: #FBEAEB;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  
+  .div1 {
+    height: 99%;
+    width: 30%;
+    color:#FBEAEB;
+    font-weight: 2rem;
+    display: flex;
+    align-items: center; }
+  
+  .div2 {
+    height: 99%;
+    width: 50%; }
+    .div2 ul {
+      height: 100%;
+      color: #FBEAEB;
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      justify-content: end;
+      align-items: center; }
+      .div2 ul li a {
+        margin-top: 10px;
+        color: #FBEAEB;
+        font-size: xx-large;
+        text-decoration: none;
+        margin: 10px; }
+  #sign-out-btn{
+    color: #FBEAEB;
+  }
+  body{
+    background: #2b2a34;
+    color: whitesmoke;
+  }
+
+  #data-container2{
+    margin-top: 15px;
+    height: 80%;
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+   
+  }
+  #assigned{
+    /* border: 1px solid black; */
+    height: 40%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    
+  }
+#rr{
+  margin-top: 5px;
+  margin-left: 10px;
+}
+  #assigned-data{
+    /* border:1px solid black; */
+    height: 30px;
+    width: 98%;
+  }
+
+  #make-review{
+    text-decoration: none;
+    /* border:1px solid black; */
+    color: #FBEAEB; ;
+    background-color:#2F3C7E;  
+  }
+
+  #reviews{
+    /* border:1px solid black; */
+    margin-top: 50px;
+    height: 50%;
+    width: 98%;
+    
+  }
+  #review-ul{
+  height: 100%;
+  list-style: none;
+  width: 98%;
+  margin-left: 0px;
+  display: flex;
+    flex-direction: row;
+  }
+  #ead{
+    margin-left: 16px;
+    font-size: x-large;
+  }
+
+
+#eachReview{
+/* border: 1px solid yellowgreen; */
+height: 100px;
+width: 250px;
+margin: 8px;
+padding: 5px;
+background: #393846;
+			box-shadow: 0 15px 100px #1e1d25;
+			border-radius: 4px;
+      font-size: 1.3rem;
+      color: #f2f2f2;
+      font-family: halyard-text, sans-serif;
+				font-weight: 100;
+				font-style: normal;
+				letter-spacing: 0.02rem;
+
+  }

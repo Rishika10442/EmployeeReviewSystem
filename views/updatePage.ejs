@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Update Employee</title>
+	<link rel="stylesheet" type="text/css" href="/css/signUp.css">
+</head>
+<body>
+	<form action="/employee/update/<%=empID%>" method="POST">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" required>
+
+        <label for="makeAdmin">Make Admin</label>
+        <input type="text" name="makeAdmin" id="makeAdmin" placeholder="false">
+
+		<input type="submit" value="Update data">
+	</form>
+</body>
+</html>

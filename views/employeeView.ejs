@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employee VIew</title>
+    <link rel="stylesheet" type="text/css" href="/css/empl.css">
+</head>
+<body>
+    <header>
+        <div class="div1">
+            <h1>Employee View</h1>
+        </div>
+        <div class="div2">
+            <ul>
+                <%  if(locals.user){ %>
+                <li> 
+                    <%= locals.user.name %>
+                </li>
+                <li>
+                <a href="/sign-out" id="sign-out-btn">Sign Out</a>    
+                </li>
+                <% }else { %>
+                <li>
+                    <a href="/sign-in">Sign In</a>
+                </li>
+                <li>
+                    <a href="/sign-up">Sign Up</a>
+                </li>
+        
+                <% } %>
+            </ul>
+        </div>
+    
+
+    
+   
+    </header>
+
+    <div id="data-container2">
+       <div id="assigned">
+        <p id="rr">REVIEW THESE EMPLOYEES</p>
+        
+        <ul>
+
+                <% assignedToMe.forEach(function(item) { %>
+                    <li id="assign-data"><%= item.assignedFor.name %>
+                        <a href="/review/giveReview/<%=item.assignedFor._id%>" id="make-review">Give Review</a></li>
+                  <% }); %>
+        </ul>
+       </div> 
+       <div id="reviews">
+        <p id="ead">Reviews For Your Work</p>
+        <ul id="review-ul">
+        <% myReviews.forEach(function(review) { %>
+        <li id="eachReview">
+            <p><%=review.description%></p>
+        </li>
+          <% }) %>
+        </ul>
+       </div>
+    </div>
+
+</body>
+</html>

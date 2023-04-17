@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assign a review</title>
+	<link rel="stylesheet" type="text/css" href="/css/signUp.css">
+</head>
+<body>
+    <form action="/review/create/<%=to%>" method="POST">
+        <label for="email">Email for the employee to be reviewed :</label>
+		<input type="email" id="email" name="email" required>
+        <input type="submit" value="Assign">
+    </form>
+</body>
+</html>

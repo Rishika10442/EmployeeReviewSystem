@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin VIew</title>
+    <link rel="stylesheet" type="text/css" href="/css/admin.css">
+</head>
+<body>
+    <div id="header">
+    <h1 style="text-transform: uppercase;" class="h">Welcome admin 👋</h1>
+    <ul>
+        <%  if(locals.user){ %>
+            <li>
+                <a href="/sign-out" id="sign-out-btn">Sign Out</a>    
+            </li>
+        <% } %>
+    </div>
+    <div id="data-container">
+        <div id="employees">
+            <ul id="employee-list">
+                <% for (let employee of totalemployees) { %>
+                  <li id="employee-<%= employee._id %>">
+                    <%= employee.name %>
+                     <a href="/admin/assign/<%= employee._id %>" id="assign-button">Assign</a>
+                     <a href="/admin/update/<%= employee._id %>" id="update-button">Update Info</a>
+                     <a href="/admin/delete/<%= employee._id %>" id="deleteButton">X</a>
+                     
+                  </li>
+                <% } %>
+              </ul>
+              <a href="/admin/add-new-employee" id="new-emp">Add New Employee</a>
+        </div>
+        <div id="reviews">
+            <ul id="review-list">
+                <% for (let review of totalreviews) { %>
+                    <li id="review-<%= review._id%>" class="review-block">
+                    <p id="head">Employee Name : <%= review.reviewFor.name%></p>
+                      <%= review.description %>
+                      <a href="/review/edit/<%=review._id%>" id="edit-btn">Edit Review</a>
+                      <a href="/review/delete/<%=review._id%>" id="delete-btn">Delete Review</a>
+                      <p id="by-line">ReviewedBy : <%= review.reviewBy.name%></p>
+                        
+                    </li>
+                  <% } %>
+            </ul>
+
+        </div>
+    </div>
+</body>

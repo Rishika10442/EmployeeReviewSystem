@@ -1,0 +1,38 @@
+body{
+    background-color:#2F3C7E; 
+}
+#head{
+    font-size: xx-large;
+    color: aliceblue;
+}
+
+
+#div1{
+    background-color:  #FBEAEB;
+    color: black;
+    position: absolute;
+    top:35%;
+    left: 45%;
+    padding: 10px;
+    height: 30px;
+    width: 100px;
+    text-decoration: none;
+}
+#div1:hover{
+    background-color: aqua;
+}
+
+#div2{
+    background-color:  #FBEAEB;
+    color: black;
+    position: absolute;
+    top:44%;
+    padding: 10px;
+    text-decoration: none;
+    height: 30px;
+    width: 100px;
+    left:45%;
+}
+#div2:hover{
+    background-color: aqua;
+}
