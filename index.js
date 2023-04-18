@@ -51,7 +51,7 @@ app.use('/',require('./routes/index'));
 
  const start = async() =>{
     try {
-        const url = 'mongodb://localhost:27017/empReview';
+        const url = 'mongodb+srv://10442rishika:jtAJfmDJnKhxSziG@cluster0.coclkau.mongodb.net/test';
         await connectDB(url);
         app.listen(port,function(){
             // console.log(__dirname+'/uploads');
