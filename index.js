@@ -29,7 +29,7 @@ app.use(session({
     },
     store: MongoStore.create(
         {
-            mongoUrl:"mongodb://localhost:27017/empReview",
+            mongoUrl:"mongodb+srv://10442rishika:jtAJfmDJnKhxSziG@cluster0.coclkau.mongodb.net/test",
             autoRemove: 'disabled'
         },
         function(err){
